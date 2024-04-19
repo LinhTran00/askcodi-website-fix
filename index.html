@@ -28,8 +28,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333; /* Set text color to a darker shade */
+    color: #333; /* Default text color */
     text-decoration: none;
+}
+
+/* Adjust text color for smaller text sizes */
+@media (max-width: 768px) {
+    nav ul li a {
+        color: #555;
+    }
 }
 
 nav ul li a:hover {
@@ -59,12 +66,6 @@ nav ul li a:hover {
 
 .content {
     padding: 20px;
-}
-
-@media (min-width: 576px) {
-    nav ul li a {
-        color: white; /* Apply white color at larger screen sizes */
-    }
 }
 
 </style>
