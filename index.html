@@ -28,13 +28,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333; /* Darken the text color */
+    color: #333; /* Set text color to a darker shade */
     text-decoration: none;
-    transition: color 0.3s; /* Add smooth transition effect */
 }
 
 nav ul li a:hover {
-    color: white; /* Change text color on hover */
+    color: white;
 }
 
 .hero {
@@ -57,8 +56,15 @@ nav ul li a:hover {
     margin: 0 auto;
     padding: 20px;
 }
+
 .content {
     padding: 20px;
+}
+
+@media (min-width: 576px) {
+    nav ul li a {
+        color: white; /* Apply white color at larger screen sizes */
+    }
 }
 
 </style>
