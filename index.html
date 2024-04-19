@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333; /* Default text color */
 }
 
 nav {
@@ -20,27 +21,23 @@ nav {
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
+nav li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #333; /* Default text color */
+nav a {
+    color: #ffffff; /* Navigation text color */
     text-decoration: none;
+    font-size: 1em;
 }
 
-/* Adjust text color for smaller text sizes */
-@media (max-width: 768px) {
-    nav ul li a {
-        color: #555;
-    }
-}
-
-nav ul li a:hover {
-    color: white;
+nav a:hover {
+    color: #ffa07a; /* Hover state color for navigation links */
 }
 
 .hero {
@@ -49,7 +46,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #ffffff; /* Hero section text color */
     text-align: center;
 }
 
@@ -60,12 +57,19 @@ nav ul li a:hover {
 .hero p {
     font-size: 1.2em;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 .content {
     padding: 20px;
+    color: #333; /* Content section text color */
+}
+
+.content h2 {
+    color: #FF5733; /* Heading color in content section */
+}
+
+.content p {
+    color: #444; /* Text color in content section */
 }
 
 </style>
